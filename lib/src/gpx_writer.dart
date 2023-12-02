@@ -24,6 +24,8 @@ class GpxWriter {
     builder.element(GpxTagV11.gpx, nest: () {
       builder.attribute(GpxTagV11.version, gpx.version);
       builder.attribute(GpxTagV11.creator, gpx.creator);
+      builder.attribute(GpxTagV11.namespace, gpx.namespace);
+      builder.attribute(GpxTagV11.schema, gpx.schema);
 
       if (gpx.metadata != null) {
         _writeMetadata(builder, gpx.metadata!);

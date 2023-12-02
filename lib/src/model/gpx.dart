@@ -18,6 +18,10 @@ class Gpx {
   /// to validate.
   String creator = '';
 
+  String schema = 'http://www.w3.org/2001/XMLSchema-instance';
+
+  String namespace = 'http://www.topografix.com/GPX/1/1';
+
   /// Metadata about the file.
   Metadata? metadata;
 
